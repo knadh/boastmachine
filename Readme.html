@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>boastMachine 3.1 README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="boastMachine 3.0 platinum readme" />
+
+<style type="text/css">
+<!--
+
+body {
+	background: #eeeeee;
+	margin: 0px;
+	font-family: Trebuchet MS, Georgia;
+	font-size: 14px;
+}
+
+#wrap {
+	width: 720px;
+	margin: auto;
+	border-style: solid;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-color: #cecece;
+	
+}
+
+#main {
+	background: #fafafa;
+	padding: 10px;
+	height: 200%;
+}
+
+#footer {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+h1 {
+	font-size: 28px;
+	color: #13306A;
+}
+
+h2 {
+	font-size: 15px;
+	color: #3F5D9A;
+}
+
+a {
+	font-weight: bold;
+	color: #13306A;
+}
+
+a:hover {
+	color: #5D77AC;
+}
+
+//-->
+</style>
+
+</head>
+
+<body>
+
+<div id="wrap">
+<div id="main">
+
+<h1>boastMachine 3.1</h1>
+"boastMachine, powering the best blogs"
+<br /><br /><br />
+
+<h2>Online resources</h2>
+<a href="http://boastology.com">boastMachine Home</a><br />
+Home sweet home :)<br /><br />
+
+<a href="http://boastology.com/pages/download.php">Downloads</a><br />
+Download the latest version of boastMachine, addons, mods..<br /><br />
+
+<a href="http://boastology.com/forum">Forum</a><br />
+The boastMachine forum. A small community of boastMachine users sharing their suggestions and ideas and doing general discussion<br /><br />
+
+<a href="http://boastology.com/pages/features.php">Feature list</a><br />
+boastMachine's up-to-date feature list<br /><br />
+
+<a href="http://boastology.com/docs">Official Documentation</a><br />
+The boastMachines's official documentation. FAQs, HowTos etc..<br /><br /><br />
+
+
+
+<h2>Overview</h2>
+boastMachine is a robust publishing platform developed in PHP, the world's most powerful scripting language and 
+and backed by MySQL (database). boastMachine makes your publishing so fun and easy as never before ! 
+From one click installation to advanced Spam management features, boastMachine is loaded with everything that 
+enables you to publish your contents with easy !
+
+<br /><br /><br />
+<h2>Requirements</h2>
+PHP v4.1 or higher, MySQL v3.2 or better
+
+<br /><br /><br />
+<h2>Installation</h2>
+boastMachine's installation is guaranteed to be done right in 10 minutes or less.<br />
+Follow these simple steps to install and start using boastMachine.<br />
+<br />
+
+(If you are upgrading from boastMachine 3.0 to 3.1, <a href="#upgrade">click here</a> for upgrade info)<br /><br />
+
+<strong>1</strong>. Extract the package into a directory on your local pc<br />
+<strong>2</strong>. Upload the directory to your webserver preserving the file structure<br />
+eg: /blog on your site where the .php files and directories come directly under the /blog directory
+<br /><br />
+
+<strong>3</strong>. Goto yoursite.com/blog/bmc/install.php and enter the details and hit 'Continue' button<br />
+The installation script will ask you for the MySQL info and a username and password for the default admin. 
+There'll be three other options<br />
+<strong>a)</strong> Autoset directory permissions ( the script will automatically try to set the necessary file and permissions) <br />
+<strong>b)</strong> Overwrite tables ( Will overwrite the MySQL tables if you already have an installation)<br />
+<strong>c)</strong> Create a new database ( Will try to create a new database with the name you entered)
+
+<br /><br /><br />
+
+Done! Thats all! Now you can access the admin by going to http://yoursite.com/blog/bmc/admin.php<br /><br />
+
+The first thing you should do after the installation is to configure your blog by going to Admin - > Settings
+
+<br /><br /><br />
+PS: The 'Autoset Permission' feature will most probably fail because of certain serverside configurations.
+In that case, you should set the permissions (CHMOD) by yourself.
+/blog/ - 777 (Parent directory)<br />
+/blog/backup - 777<br />
+/blog/files - 777<br />
+/blog/templates - 777<br />
+/blog/rss - 777<br />
+/blog/bmc/inc/lang - 777<br />
+/blog/bmc/inc/vars - 777<br />
+/blog/bmc/inc/vars/cache - 777<br />
+(assuming that /blog is the parent directory)<br /><br />
+Also, if you want to be able to edit the templates online with the template editor, you should CHMOD the appropriate theme directory and all the files in it to 777
+<br /><br />
+Notes: It is recommended that you delete the install script (install.php) manually after the installation for extra security.
+
+<br /><br /><br />
+<h2>Search engine friendly urls</h2>
+The all new boastMachine brings to you what no other blog can ! The new boastMachine 
+has the ability to use search engine friendly URLs by default without needing any 
+extra modding or hacking ! Your log entry urls no more look like this http://site.com/blog/blog_name.php?id=25 but
+http://site.com/blog/my-post-title-25-1.html . Now how is that! You didnt expect that, did you?<br /><br />
+
+<br /><br /><br />
+<h2>a ShoutBox !</h2>
+Yes, boastMachine has a built in shoutbox system!<br />
+This nifty built in shoutbox doesn't use a MySQL db.
+You can display this shoutbox on any of the boastMachine pages.
+The function you should use to load the shoubox is bmc_ShoutBox();
+For example, in a template, it would look something like this.<br /><br />
+<strong><code>&lt;?php bmc_ShoutBox(); ?&gt;</code></strong><br />
+
+<br /><br /><br />
+<h2>ALT+U</h2>
+Now what is that! boastMachine comes with a nifty little menu :) Once you are logged in, 
+hitting the key combination ALT+U will make a floating menu popup. You'll find quick links 
+to your account, posts etc. Hit ALT+U again and the box is gone! How nifty is that?
+<br />
+
+<br /><br /><br />
+<h2>AntiSpam</h2>
+boastMachine is loaded with advanced spam fighting features that drastically minimizes spam on your blogs. 
+Image verification on comments help to prevent automated bots from commenting. The keyword trigger enables you to 
+block and ban the users posting comments and trackbacks containing specific keywords.
+
+<br /><br /><br />
+<h2>User Levels</h2>
+boastMachine has 5 different user levels, ranging from 0 to 4<br />
+Each level has certain privilages. Here's a list of them<br /><br />
+
+0 - Frozen/Disabled. No rights<br />
+1 - Can post comments<br />
+2 - Can post comments and new posts<br />
+3 - Can post/edit posts and comments<br />
+4 - ADMINISTRATOR. Full privilages. Access to admin panel<br />
+
+
+<br /><br /><br />
+<a name="upgrade" /></a>
+<h2>Upgrading from 3.0 to 3.1</h2>
+If you are upgrading from 3.0 to 3.1, the installation procedure is different. You'll need to the upgrade script 
+which can be found in the package itself (upgrade.3.1.zip) or can be downloaded from <a href="http://boastology.com/pages/dload.php?id=upgrade.3.1">here</a>. The exact installation &amp; upgrade 
+procedure can be found in the readme of the upgrade script.
+
+<br /><br /><br />
+<h2>Copyright and Licensing</h2>
+boastMachine is a free software and is licensed under GPL (General Public license). 
+Please see GPL license file <a href="gpl.txt" title="GPL">gpl.txt</a>
+
+<br /><br /><br />
+<h2>Extra info</h2>
+Need help setting file <a href="http://support.discusware.com/center/resources/howto/chmod.html" title="CHMOD tutorial">permissions?</a><br />
+Need professional installation? Need customization? <a href="http://boastology.com/pages/contact.php">Contact me</a>
+
+
+
+<div id="footer">
+<br /><br />
+Edited by <a href="http://www.kailashnadh.name">Kailash Nadh</a> 4th June 2005 <br />
+<br /><a href="http://boastology.com">boastology.com</a>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

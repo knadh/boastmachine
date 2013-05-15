@@ -1,0 +1,14 @@
+A new user [NAME] has registered on [DATE]
+
+User acount
+-----------------
+Username : [USERNAME]
+Password : * * * * *
+-----------------
+
+
+
+
+------------------------
+This is an automated mail sent to you to notify about new user
+registration from [MY_SITE]

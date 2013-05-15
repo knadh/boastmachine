@@ -1,0 +1,14 @@
+Good Day [NAME]!
+
+Thank you for joining [MY_SITE] !
+We are happy to accept you as a member of our growing community!
+
+Your acount info
+-----------------
+Username : [USERNAME]
+Password : [PASSWORD]
+-----------------
+
+Good Luck!
+Administrator
+[MY_SITE]

@@ -1,0 +1,19 @@
+This mail is being sent to you in reply to
+the 'Forgot password' request you made.
+
+Your password has been reset to a random value.
+Please use the new password to login and change your account info.
+
+
+
+Your acount info
+-----------------
+Username : [USERNAME]
+Password : [PASSWORD]
+-----------------
+
+You can access your account at [MY_SITE]
+
+Good Luck!
+Administrator
+[MY_SITE]

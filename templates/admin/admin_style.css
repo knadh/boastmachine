@@ -1,0 +1,277 @@
+html,body {
+	background: #616760;
+	font-family: 'Trebuchet MS',Verdana;
+	font-size: 13px;
+	margin: 0px;
+}
+
+#wrap {
+	width: 750px;
+	margin-left: 13%;
+	background-color: #ffffff;
+	background: url("<?php echo $bmc_vars['site_url']; ?>/templates/admin/images/body.gif");
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+}
+
+#main {
+	color: #333333;
+	line-height: 140%;
+	background-color: #ffffff;
+	margin-left: 15px;
+	width: 96%;
+}
+
+#header {
+	width: 742px;
+	height: 175px;
+	background: url('<?php echo $bmc_vars['site_url']; ?>/templates/admin/images/header.gif');
+	margin-bottom: 0px;
+}
+
+#header_stats {
+	float: left;
+	text-align: right;
+	color: #666666;
+	padding-left: 50px;
+	padding-top: 50px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#header_links {
+	text-align: right;
+	color: #9E9E9E;
+	padding-right: 30px;
+	padding-top: 35px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#content {
+	padding-left: 10px;
+	padding-bottom: 30px;
+	background-color: #ffffff;
+	padding-bottom: 200px;
+}
+
+h1 {
+	font-size: 17px;
+}
+
+#menu {
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 1px;
+	border-color: #BCE095;
+	padding-left: 20px;
+	margin-bottom: 30px;
+	margin-left: 6px;
+	width: 687px;
+	background-color: #F7FAEB;
+}
+
+#menu h1 {
+	font-size: 12px;
+}
+
+#menu a {
+	padding: 2px;
+	font-weight: normal;
+	color: #333399;
+	margin-right: 4px;
+}
+
+#menu a:hover {
+	text-decoration: none;
+}
+
+.menu_item {
+	margin-bottom: 30px;
+	font-size: 11px;
+	line-height: 20px;
+	font-family: 'Trebuchet MS',Verdana;
+}
+
+a {
+	color: #333333;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+img {
+	border: 0px;
+}
+
+input,textarea,select {
+	font-size: 11px;
+	font-family: 'Trebuchet MS';
+	border-style: solid;
+	border-width: 1px;
+	border-color: #B1B1B1;
+}
+
+input,select {
+	background: #fefefe;
+}
+
+input {
+	background: url("<?php echo $bmc_vars['site_url']; ?>/templates/admin/images/bt_bg.gif");
+}
+
+#footer {
+	margin-bottom: 15px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 11px;
+	font-family: 'Trebuchet MS',Verdana;
+	clear: both;
+}
+
+#footer a {
+	font-weight: normal;
+}
+
+#curve_bottom {
+	background: url('<?php echo $bmc_vars['site_url']; ?>/templates/admin/images/curve_bottom.gif');
+	height: 30px;
+	width: 750px;
+}
+
+.form_fields {
+	margin-left: 25%;
+	border: 1px solid #B2B2B2;
+	background-color: #FCFCFC;
+	padding: 25px;
+	width: 300px;
+	text-align: right;
+}
+
+.form_fields textarea, input, select {
+
+	font-family: 'Trebuchet MS',Verdana;
+	font-size: 11px;
+	padding: 3px;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	margin: 2px;
+}
+
+.form_fields input {
+	background: url("<?php echo $bmc_vars['site_url']; ?>/templates/admin/images/bt_bg.gif");
+}
+
+.bold_red {
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 13px;
+}
+
+.page_num {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.hr_line {
+	border-color: #EFEFEF;
+	border-style: dotted;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+}
+
+#error_msg {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.boxed {
+	margin: 3px;
+	padding: 6px;
+	background: #F9F9F9;
+	border-color:  #CC3333;
+	border-width: 1px;
+	border-style: solid;
+	width: 400px;
+}
+
+.blog_boxed {
+	margin: 3px;
+	padding: 6px;
+	background: #F9F9F9;
+	border-color:  #666666;
+	border-width: 1px;
+	border-style: solid;
+	width: 250px;
+}
+
+.form_box {
+	text-align: left;
+}
+
+.hold_center {
+	text-align: center;
+}
+
+
+#post_list {
+	font-family: 'Trebuchet MS',Verdana;
+	font-size: 10px;
+}
+
+#file_div, #file_div a {
+	font-size: 7pt;
+	color: #FF6600;
+}
+
+#settings {
+	padding-left: 100px;
+}
+
+#settings_submit {
+	font-weight: bold;
+	color: #3352AF;
+}
+
+
+#settings_links a {
+	color: #3352AF;
+	font-size: 14px;
+}
+
+#settings_container {
+	margin: 0px;
+}
+
+#settings_site {
+	top: 440px;
+	margin: 0px;
+	visibility: hidden;
+	position: absolute;
+}
+
+
+#settings_misc {
+	top: 440px;
+	margin: 0px;
+	visibility: hidden;
+	position: absolute;
+}
+
+#settings_system {
+	top: 440px;
+	margin: 0px;
+	visibility: hidden;
+	position: absolute;
+}
+
+/* The post lists table in the user account */
+#posts_list_table th {
+	background-color: #F3F3F3;
+}

@@ -1,0 +1,360 @@
+/* =========================
+
+	boastMachine v3.1 'Luscious' style sheet
+		by Kailash Nadh
+		http://kailashnadh.name
+
+		boastMachine v3.1 (GPL)
+		http://boastology.com
+
+   ========================= */
+
+html,body {
+	background: #616760;
+	margin: 0px;
+
+	font-family: 'Trebuchet MS';
+	font-size: 12px;
+	color: #333333;
+}
+
+#top_bar {
+	background: #50564F;
+	height: 5px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#wrap {
+	margin-left: 12%;
+	width: 750px;
+	margin-top: 25px;
+}
+
+#header {
+	width: 742px;
+	height: 175px;
+	background: url('<?php echo $bmc_vars['site_url']."/templates/".CFG_THEME; ?>/images/header.gif');
+	margin-bottom: 0px;
+}
+
+#header_title {
+	padding-top: 105px;
+	padding-left: 500px;
+	font-size: 24px;
+}
+
+#header_title a {
+	color: #ffffff;
+}
+
+#main {
+	background: #F7FAEB url('<?php echo $bmc_vars['site_url']."/templates/".CFG_THEME; ?>/images/body.gif');
+	width: 750px;
+}
+
+#container {
+	margin-left: 30px;
+	width: 700px;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+#menu {
+	float: right;
+	width: 150px;
+	font-size: 11px;
+}
+
+.menu_item {
+	margin-bottom: 17px;
+}
+
+.menu_item strong {
+	font-size: 13px;
+}
+
+#content {
+<?php
+	// Size
+		if($page_menu)
+			echo "width: 510px;";
+		else
+			echo "width: 700px;";
+?>
+	z-index: 3;
+}
+
+#curve_bottom {
+	background: url('<?php echo $bmc_vars['site_url']."/templates/".CFG_THEME; ?>/images/curve_bottom.gif');
+	height: 30px;
+	width: 750px;
+}
+
+
+#footer {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #F8F8F0;
+	width: 750px;
+	text-align: center;
+}
+
+#footer a {
+	color: #F8F8F0;
+}
+
+
+/* =============== GENERAL TAGS ================== */
+
+a {
+	color: #0E3964;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0px;
+}
+
+input,textarea,select {
+	font-size: 11px;
+	font-family: Verdana;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #B1B68F;
+	background: #FAFAF5;
+	padding: 3px;
+}
+
+
+
+/* =============== POST STYLES ================== */
+
+h1, .post_title {
+	font-family: Georgia;
+	font-size: 20px;
+	font-weight:normal;
+	margin: 0px;
+	color: #0E3964;
+}
+
+.post_title a {
+	color: #0E3964;
+}
+
+.post_date {
+	line-height: 30px;
+	font-family: Georgia;
+	font-size: 17px;
+}
+
+.post_text {
+	line-height: 18px;
+	margin-top: 5px;
+}
+
+.post_info {
+	font-size: 11px;
+	font-weight: normal;
+	margin-bottom: 50px;
+}
+
+.post_info a {
+	color: #0E3964;
+}
+
+
+.main_page_info {
+	margin-top: 25px;
+	margin-bottom: 75px;
+}
+
+.main_page_info a {
+	text-decoration: underline;
+}
+
+/* Image inserted with bbCode */
+.bbcode_img img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #333333;
+}
+
+
+/* =============== Comments ================== */
+
+
+.comment {
+	border: 1px dashed #D6DCC0;
+	background: #FAFCEF;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.comment_text {
+	line-height: 15px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.comment_info {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.comment a {
+	color: #0E3964;
+}
+
+.comment .thread_reply {
+	color: #0E3964;
+}
+
+#comment_form {
+	position: relative;
+	padding: 10px;
+	border: 1px solid #D6DCC0;
+	background: #FAFCEF;
+}
+
+/* =============== MISC ================== */
+
+.track {
+	font-size: 12px;
+}
+
+.form_fields {
+	margin-left: 25%;
+	border: 1px solid #D6DCC0;
+	background-color: #FAFCEF;
+	padding: 25px;
+	width: 280px;
+	text-align: right;
+}
+
+.form_fields textarea, input, select {
+	font-family: Verdana,'Trebuchet MS';
+	font-size: 11px;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	margin: 2px;
+}
+
+.bold_red {
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 13px;
+}
+
+.page_num {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.hr_line {
+	border-color: #EFEFEF;
+	border-style: dashed;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+}
+
+#error_msg {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.file_list {
+	font-size: 10px;
+	font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Helvetica;
+
+	border: 1px;
+	border-style: solid;
+	border-color: #EFEFEF;
+
+	background: #F7F7F7;
+	padding: 5px;
+	width: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.file_list a {
+	font-weight: normal;
+}
+
+#file_div, #file_div a {
+	font-size: 7pt;
+	color: #FF6600;
+}
+
+/* The post lists table in the user account */
+#posts_list_table th {
+	background-color: #D5DBBE;
+}
+
+/* The invisible Layer used in the ALT+U effect */
+#floating_layer {
+	position: absolute;
+	visibility: hidden;
+	font-size: 10px;
+	font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Helvetica;
+
+	border: 1px;
+	border-style: solid;
+	border-color: #47697E;
+	background: #F7F7F7;
+	padding: 10px;
+	line-height: 18px;
+	width: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/* =============== Calendar ================== */
+
+.calendar_table {
+	font-family: 'Trebuchet MS', verdana, sans-serif;
+	color: #47697E;
+}
+
+.calendar_table a {
+	text-decoration: underline;
+}
+
+.calendar_month {
+	font-family: Arial, verdana, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.calendar_days {
+	font-family: 'Trebuchet MS', verdana, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.calendar_current_day {
+	font-family: 'Trebuchet MS', verdana, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	background-color: #D4DBBE;
+	color: #47697E;
+	font-weight: bold;
+}
+
+.calendar_day {
+	font-family: 'Trebuchet MS', verdana, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	background: #F7FAEA;
+	color: #666666;
+}

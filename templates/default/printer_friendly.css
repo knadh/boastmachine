@@ -1,0 +1,30 @@
+.html,body {
+	font-family: 'Trebuchet MS', Georgia;
+	font-size: 12px;
+}
+
+.title {
+	color: #47697E;
+}
+
+#summary {
+	font-size: 11px;
+}
+
+#body {
+	font-size: 11px;
+}
+
+.line_hr {
+	border: 0px;
+	border-color: #666666;
+	border-style: solid;
+	border-bottom-width: 1px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+a {
+	color: #47697E;
+	font-weight: bold;
+}

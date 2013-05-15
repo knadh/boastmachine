@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# For POSTS : /post/BLOG_FILE/POST_ID/TITLE
+RewriteRule ^post/(.*)/(.*)/(.*)/ $1.php/?id=$2
+RewriteRule ^post/(.*)/(.*)/(.*) $1.php/?id=$2
+
+# For PAGE : /page/BLOG_FILE/PAGE_NUMBER
+RewriteRule ^page/(.*)/(.*)/ $1.php/?p=$2
+RewriteRule ^page/(.*)/(.*) $1.php/?p=$2
+
+# For CATEGORIES : /cat/BLOG_FILE/CAT_ID/CAT_NAME
+RewriteRule ^cat/(.*)/(.*)/ $1.php/?cat=$2
+RewriteRule ^cat/(.*)/(.*) $1.php/?cat=$2
+
+# Calendar : /calendar/DATE
+RewriteRule ^calendar/(.*)/(.*)/ $1.php?show=$2
+RewriteRule ^calendar/(.*)/(.*) $1.php?show=$2
+
+# Archive : /archive/DATE
+RewriteRule ^archive/(.*)/(.*)/ $1.php?show=$2
+RewriteRule ^archive/(.*)/(.*) $1.php?show=$2

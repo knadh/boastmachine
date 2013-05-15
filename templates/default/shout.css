@@ -1,0 +1,30 @@
+/******************
+
+	boastMachine (GPL)
+	htp://boastology.com
+
+	ShoutBox style
+
+*******************/
+
+body {
+	background-color: #F9FCF1;
+	font-family: Verdana;
+	font-size: 9px;
+}
+
+a {
+	color: #333333;
+}
+
+input,textarea {
+	font-size: 9px;
+	font-family: Verdana;
+	border-width: 1px;
+	border-color:#666666;
+	border-style:solid;
+}
+
+.entry {
+	line-height: 15px;
+}

@@ -1,0 +1,8 @@
+[NAME] ([IP]) has posted a reply to your comment on the post 
+[POST_TITLE] at [TIME]
+
+URL : [POST_URL]
+
+
+------------------------
+This is an automated mail sent to you for notification of the new comment

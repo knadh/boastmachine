@@ -1,0 +1,20 @@
+Good Day friend,
+	This mail has been sent to let you know that
+your friend, [NAME] has suggested you to read the
+article named " [TITLE] " @ [SITE]
+
+The post can be viewed by clicking this URL:
+[URL]
+
+The post " [TITLE] " was written by [AUTHOR]
+
+Message from your friend, [NAME]  < [EMAIL] >
+[DATE]
+
+------------------------------------
+[COMMENTS]
+------------------------------------
+
+
+
+Powered by BoastMachine v3.1 - http://boastology.com
